@@ -24,5 +24,3 @@ For your 21st century hit counter, get your Google Analytics code (something lik
 # Preview
 
 It looks like this:
-
-![](http://25.media.tumblr.com/57d2cdecc4a024a19104f75c3891eba7/tumblr_mhx2ls31gs1qgq7mto1_1280.png)

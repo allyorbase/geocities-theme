@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta name="text:Google Analytics Code" content=""/>
+        <meta name="text:Web Counter" countent=""/>
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+    </head>
+    <body bgcolor="#000000" text="#FFFFFF" background="http://static.tumblr.com/uovukmx/xh9mhx0g1/stars-bb.gif">
+        <center><h1><a href="/" color="#FFFFFF" style='text-decoration:none; color: #ffffff'>{Title}</a></h1>
+
+        <img src="{PortraitURL-128}">
+        {block:Description}
+            <center><div style="max-width:500px">
+            <marquee>{Description}</marquee>
+            </div></center>
+        {/block:Description}
+
+        {block:AskEnabled}
+            <br><h2><a href="/ask"> {AskLabel}</a></h2>
+        {/block:AskEnabled}
+        </center>
+        <center><img src="http://www.sproutyourdesign.com/images/fire.gif">
+        </center>
+        <br>
+        <center>
+        <p><img src="https://31.media.tumblr.com/820aac2892cacbdef2ec60b9ed4e8f21/tumblr_inline_nomvebTKmE1rcvltz_500.gif" /></p>
+        <p>gay babys first playboy</p>
+        <p><img src="https://31.media.tumblr.com/1ed48e54844063dbaada63dc46d41de2/tumblr_inline_nomvh0zixa1rcvltz_500.gif" /></p>
+        <p>bitchface memelord-chan</p>
+        <p><img src="https://31.media.tumblr.com/aa9d1d581a3548746136fcc540b88bc0/tumblr_inline_nomvhiW4w21rcvltz_500.gif" /></p>
+        <p>deez</p>
+        </center>
+        
+
+        <p id="footer">
+            <center>
+            <br><br>
+            <h3><a href="/archive">Archive</a></h3>
+            </center>
+        </p>
+
+
+{block:IfGoogleAnalyticsCode}
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{text:Google Analytics Code}']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+{/block:IfGoogleAnalyticsCode}
+    </body>
+</html>
