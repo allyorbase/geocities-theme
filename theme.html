@@ -20,7 +20,7 @@
         {/block:Description}
 
         {block:AskEnabled}
-            <a href="/ask"><img src="http://static.tumblr.com/uovukmx/sXYmhx13s/emailme.gif"> {AskLabel}</a>
+            <br><h2><a href="/ask"> {AskLabel}</a></h2>
         {/block:AskEnabled}
         </center>
 
@@ -34,7 +34,7 @@
                     {block:NotReblog} 
                     <p>
                     <script>
-                        if ({NoteCount} > 100) {
+                        if ({NoteCount} > 60) {
                             document.write('HOT POST<br><img src="http://static.tumblr.com/uovukmx/pVpmhx34t/fire.gif">');
                         }
                     </script>
@@ -166,31 +166,33 @@
         <p id="footer">
             <center>
             {block:PreviousPage}
-                <h2><a href="{PreviousPage}">&#171; Previous Page</a></h2>
+                <a href="{PreviousPage}"><img src="https://i.imgur.com/cLcv7XK.gif"></a>
             {/block:PreviousPage}
 
             {block:NextPage}
-                <h2><a href="{NextPage}">Next Page &#187;</a></h2>
+                <a href="{NextPage}"><img src="http://equipoaguilas.com/images/RB_Arrow.gif" width="50" height="31">
+                </a>
             {/block:NextPage}
             <br><br>
             <h3><a href="/archive">Archive</a></h3>
-            <a href="/"><img src="http://static.tumblr.com/uovukmx/cXumhx240/home.gif"></a>
             </center>
         </p>
 
 {block:IfWebCounter}
 <!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com/" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page={text:Web Counter}&style=0005&nbdigits=5&type=page&initCount=0" title="" Alt=""   border="0" >
-</a>
+<center><img src="http://hitwebcounter.com/counter/counter.php?page=6071237&style=0050&nbdigits=7&type=page&initCount=0" title="Hit Web Stats" Alt="Hit Web Stats"   border="0" >
+</a></center>
+<br>
+
 {/block:IfWebCounter}
+<center><img src="http://www.sproutyourdesign.com/images/fire.gif">
+<br></center>
 
 {block:IfGoogleAnalyticsCode}
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '{text:Google Analytics Code}']);
   _gaq.push(['_trackPageview']);
-
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
