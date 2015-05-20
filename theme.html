@@ -1,5 +1,22 @@
 <html>
     <head>
+        <style>
+        #top {
+                height: 120px;
+                margin: 0;
+                position: relative;
+              }
+        #lightningleft {
+          bottom: 0;
+          display: inline;
+          float: left;
+        }
+        #lightingright {
+            bottom: 0;
+            display: inline;
+            float: right;
+        }
+        </style>
         <meta name="text:Google Analytics Code" content=""/>
         <meta name="text:Web Counter" countent=""/>
         <title>{Title}</title>
@@ -11,8 +28,14 @@
     </head>
     <body bgcolor="#000000" text="#FFFFFF" background="http://static.tumblr.com/uovukmx/xh9mhx0g1/stars-bb.gif">
         <center><h1><a href="/" color="#FFFFFF" style='text-decoration:none; color: #ffffff'>{Title}</a></h1>
+          <div id="top">
+            <img id="lightningleft" src="http://www.taborrobak.com/internetmagick/flash5.gif">
+            <img id="lightingright" src="http://www.taborrobak.com/internetmagick/flash5.gif">
+            <img src="{PortraitURL-128}">
+            <img src="https://i.imgur.com/wul0CE1.gif" style="float:right;display:inline">
 
-        <img src="{PortraitURL-128}">
+            <img src="https://i.imgur.com/wul0CE1.gif" style="float:left;display:inline">
+          </div>
         {block:Description}
             <center><div style="max-width:500px">
             <marquee>{Description}</marquee>
@@ -20,37 +43,37 @@
         {/block:Description}
 
         {block:AskEnabled}
-            <br><h2><a href="/ask"> {AskLabel}</a></h2>
+            <h2><a href="/ask"> {AskLabel}</a></h2>
         {/block:AskEnabled}
         </center>
 
-        
+
             {block:Posts}
             <table border=1 width=100%>
             <tr>
                 <td width="200">{block:Date}<a href="{Permalink}">{ShortMonth} {DayOfMonth}, {ShortYear}</a>.{/block:Date}<br>
                 {NoteCount} Notes.
-                
-                    {block:NotReblog} 
+
+                    {block:NotReblog}
                     <p>
                     <script>
                         if ({NoteCount} > 60) {
                             document.write('HOT POST<br><img src="http://static.tumblr.com/uovukmx/pVpmhx34t/fire.gif">');
                         }
                     </script>
-                    {/block:NotReblog} 
+                    {/block:NotReblog}
             </td>
                 <td>
 
 
                 {block:Text}
-                    
+
                         {block:Title}
                             <h3><a href="{Permalink}">{Title}</a></h3>
                         {/block:Title}
 
                         {Body}
-                    
+
                 {/block:Text}
 
                 {block:Photo}
@@ -59,7 +82,7 @@
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-                    
+
                 {/block:Photo}
 
                 {block:Panorama}
@@ -151,17 +174,17 @@
                     {/block:Tags}
                 {/block:HasTags}
             </td></tr>
-            {block:PermalinkPage} 
+            {block:PermalinkPage}
             <tr><td colspan=2 align="center">
                 {block:PostNotes}
                     {PostNotes-16}
                 {/block:PostNotes}
             </td></tr>
-            {/block:PermalinkPage} 
+            {/block:PermalinkPage}
             </table>
             <br><br>
             {/block:Posts}
-        
+
 
         <p id="footer">
             <center>
@@ -179,12 +202,13 @@
         </p>
 
 {block:IfWebCounter}
-<!-- hitwebcounter Code START -->
-<center><img src="http://hitwebcounter.com/counter/counter.php?page=6071237&style=0050&nbdigits=7&type=page&initCount=0" title="Hit Web Stats" Alt="Hit Web Stats"   border="0" >
-</a></center>
-<br>
-
+  <!-- hitwebcounter Code START -->
+  <center><img src="http://hitwebcounter.com/counter/counter.php?page=6071237&style=0050&nbdigits=7&type=page&initCount=0" title="Hit Web Stats" Alt="Hit Web Stats"   border="0" >
+  </a></center>
+  <br>
 {/block:IfWebCounter}
+
+
 <center><img src="http://www.sproutyourdesign.com/images/fire.gif">
 <br></center>
 
@@ -200,5 +224,22 @@
   })();
 </script>
 {/block:IfGoogleAnalyticsCode}
+<!-- Start of StatCounter Code for Tumblr -->
+<script type="text/javascript">
+var sc_project=10447297;
+var sc_invisible=0;
+var sc_security="3f9130c3";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="tumblr stats"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/10447297/0/3f9130c3/0/"
+alt="tumblr stats"></a></div></noscript>
+<!-- End of StatCounter Code for Tumblr -->
     </body>
 </html>
